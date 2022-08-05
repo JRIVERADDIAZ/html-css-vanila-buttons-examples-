@@ -1,0 +1,288 @@
+ body {
+     background-color: #212122;
+     color: azure;
+ }
+
+ .button {
+     height: 30px;
+     width: 290px;
+     font-size: 28px;
+     color: white;
+     border: none;
+     background-color: rgb(152, 157, 226);
+     border-radius: 15px;
+     transition: all 3s ease-in 2s, background-color;
+ }
+
+ .button:hover {
+     background-color: rgb(52, 18, 133);
+     color: black;
+ }
+
+ /* -ease	Default value. Specifies a transition effect with a slow 
+start, then fast, then end slowly (equivalent to cubic-bezier(0.25,0.1,0.25,1)) */
+ .button-ease {
+     height: 30px;
+     width: 290px;
+     font-size: 28px;
+     color: white;
+     border: none;
+     background-color: rgb(152, 157, 226);
+     border-radius: 15px;
+     transition-timing-function: ease;
+     transition-property: translate(), background-color;
+     transition-duration: 3s;
+ }
+
+ .button-ease:hover {
+     transform: translate(400px, 0);
+     background-color: rgb(52, 18, 133);
+ }
+
+ /* -linear	Specifies a transition effect with the same speed from
+ start to end (equivalent to cubic-bezier(0,0,1,1)) */
+ .button-linear {
+     height: 30px;
+     width: 290px;
+     font-size: 28px;
+     text-align: center;
+     color: white;
+     background-color: rgb(152, 157, 226);
+     border-radius: 15px;
+     transition-timing-function: linear;
+     transition-property: translate(), background-color;
+     transition-duration: 3s;
+ }
+
+ .button-linear:hover {
+     transform: translate(500px, 0);
+     background-color: rgb(32, 33, 49)
+ }
+
+ /* -ease-in	Specifies a transition effect with a slow start 
+(equivalent to cubic-bezier(0.42,0,1,1)) */
+ .button-ease-in {
+     height: 30px;
+     width: 290px;
+     font-size: 28px;
+     text-align: center;
+     color: white;
+     background-color: rgb(152, 157, 226);
+     border-radius: 15px;
+     transition-timing-function: ease-in;
+     transition-property: translate(), background-color;
+     transition-duration: 3s;
+ }
+
+ .button-ease-in:hover {
+     transform: translate(500px, 0);
+     background-color: rgb(32, 33, 49)
+ }
+
+ /* 
+
+-ease-out	Specifies a transition effect with a slow end 
+(equivalent to cubic-bezier(0,0,0.58,1)) */
+
+ .button-ease-out {
+
+     height: 30px;
+     width: 290px;
+     font-size: 28px;
+     text-align: center;
+     color: white;
+     background-color: rgb(152, 157, 226);
+     border-radius: 15px;
+     transition-timing-function: ease-out;
+     transition-property: translate(), background-color;
+     transition-duration: 3s;
+
+ }
+
+ .button-ease-out:hover {
+     transform: translate(500px, 0);
+     background-color: rgb(32, 33, 49)
+ }
+
+ /*
+-ease-in-out	Specifies a transition effect with a slow start and end
+ (equivalent to cubic-bezier(0.42,0,0.58,1))
+*/
+
+ .button-in-out {
+     height: 30px;
+     width: 290px;
+     font-size: 28px;
+     text-align: center;
+     color: white;
+     background-color: rgb(152, 157, 226);
+     border-radius: 15px;
+     transition-timing-function: ease-in-out;
+     transition-property: translate(), background-color;
+     transition-duration: 3s;
+ }
+
+ .button-in-out:hover {
+     transform: translate(500px, 0);
+     background-color: rgb(32, 33, 49)
+ }
+
+
+ /* TRANSLATES */
+
+
+ /* SINTAX 
+  
+  transform: trasnlate(the value );
+
+  trasnfrom:translate(10 px 10px)
+
+*/
+ /* 
+img{
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	transition: transform 2s;
+}
+
+img:hover{
+    transform: translateY(-500px);
+} */
+
+
+ /* SCALE
+
+img{
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	transition: transform 2s;
+}
+
+img:hover{
+    transform: scale(2, 2);
+} */
+
+ /* ROTATE */
+
+ /* img{
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	transition: transform 2s;
+}
+
+img:hover{
+    transform: rotate( 400grad);
+} 
+*/
+
+
+ /* SKEW */
+ /* 
+img{
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	transition: transform 2s;
+    transform-origin: bottom left;
+}
+
+img:hover{
+    transform: rotate(20deg)
+} */
+
+ #div-transform-origin {
+     height: 300px;
+     width: 290px;
+     font-size: 28px;
+     color: white;
+     border: none;
+     background-color: rgb(8, 9, 24);
+     border-radius: 15px;
+     transition: transform 2s
+ }
+
+ .div-origin-top:hover {
+     transform-origin: top;
+     transform: rotate(60deg)
+ }
+
+ .div-origin-right:hover {
+     transform-origin: right;
+     transform: rotate(60deg)
+ }
+
+ .div-origin-left:hover {
+     transform-origin: left;
+     transform: rotate(60deg)
+ }
+
+ .div-origin-bottom:hover {
+     transform-origin: bottom;
+     transform: rotate(60deg)
+ }
+
+ .div-origin-top-right:hover {
+     transform-origin: top right;
+     transform: rotate(60deg)
+ }
+
+ .div-origin-top-left:hover {
+     transform-origin: top left;
+     transform: rotate(60deg)
+ }
+
+ .div-origin-bottom-right:hover {
+     transform-origin: bottom right;
+     transform: rotate(60deg)
+ }
+
+ .div-origin-bottom-left:hover {
+     transform-origin: bottom left;
+     transform: rotate(60deg)
+ }
+
+ #div-transform-init-element {
+     height: 500px;
+     width: 1000px;
+     margin: 450px;
+     font-size: 28px;
+     color: white;
+     border: none;
+     background-color: rgb(8, 9, 24);
+     border-radius: 15px;
+     transition: transform 2s;
+     transform-origin: 50px 25%;
+
+ }
+
+ .div-origin-init-element:hover {
+
+     transform: rotate(60deg);
+ }
+
+
+
+ /* ROTATE */
+
+ .cont {
+     perspective: 500px;
+ }
+
+ img {
+     width: 500px;
+     display: block;
+     margin: auto;
+     margin-top: 200px;
+     transition: transform 2s;
+ }
+
+ img:hover {
+     transform: rotateY(50deg);
+ }
